@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UserInterfaceCheckable {
   }
 
     func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {
-        return isPad ? .all : .portrait
+        return isPad ? .allButUpsideDown : .portrait
     }
 }
 
