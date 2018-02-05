@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RestaurantCollectionViewCell" id="gTV-IL-0wX" customClass="RestaurantCollectionViewCell" customModule="BottleRocketRestaurant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5HC-Ns-koN" customClass="ImageCacheView" customModule="BottleRocketRestaurant" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vXc-Or-6PD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="181"/>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="GW4-Hf-QL7">
+                        <rect key="frame" x="12" y="127" width="351" height="47"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RestaurantNameLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TcW-NF-0IU">
+                                <rect key="frame" x="0.0" y="0.0" width="351" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CategoryTypeLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ZI-wG-RMM">
+                                <rect key="frame" x="0.0" y="26.5" width="351" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="GW4-Hf-QL7" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="77b-AZ-EY5"/>
+                <constraint firstAttribute="trailing" secondItem="vXc-Or-6PD" secondAttribute="trailing" id="7aO-qg-J3l"/>
+                <constraint firstItem="vXc-Or-6PD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="8b8-6L-fg5"/>
+                <constraint firstAttribute="bottom" secondItem="5HC-Ns-koN" secondAttribute="bottom" id="Drd-mb-CqA"/>
+                <constraint firstItem="5HC-Ns-koN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="MP1-qd-Gef"/>
+                <constraint firstItem="5HC-Ns-koN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Ta0-bS-eZA"/>
+                <constraint firstAttribute="bottom" secondItem="GW4-Hf-QL7" secondAttribute="bottom" constant="6" id="VE9-1Y-EPu"/>
+                <constraint firstItem="vXc-Or-6PD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="cTZ-Sa-G1T"/>
+                <constraint firstAttribute="trailing" secondItem="5HC-Ns-koN" secondAttribute="trailing" id="fv7-72-FGd"/>
+                <constraint firstAttribute="bottom" secondItem="vXc-Or-6PD" secondAttribute="bottom" constant="-1" id="iTY-yQ-R29"/>
+                <constraint firstAttribute="trailing" secondItem="GW4-Hf-QL7" secondAttribute="trailing" constant="12" id="uwo-9R-8Wu"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="352" height="106"/>
+            <connections>
+                <outlet property="backgroundImageView" destination="vXc-Or-6PD" id="rvB-vb-b1j"/>
+                <outlet property="categoryTypeLabel" destination="2ZI-wG-RMM" id="SQw-Qb-DaH"/>
+                <outlet property="imageCacheView" destination="5HC-Ns-koN" id="aqU-bG-Frx"/>
+                <outlet property="restaurantNameLabel" destination="TcW-NF-0IU" id="djc-d3-V3v"/>
+            </connections>
+            <point key="canvasLocation" x="7" y="-132"/>
+        </collectionViewCell>
+    </objects>
+</document>

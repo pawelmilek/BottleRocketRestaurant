@@ -10,178 +10,149 @@ import Foundation
 import UIKit
 
 struct Style {
-
-  // MARK: - StatusBarView
-  struct StatusBarView {
-    static let backgroundColor = UIColor.groupGray
-    static let textColor = UIColor.appleBlue
-    static let titleTextAttributes = [NSAttributedStringKey.foregroundColor: StatusBarView.textColor]
-  }
-  
-  
-  // MARK: - AvailabilityMessageView
-  struct AvailabilityMessageView {
-    static let titleLabelTextAlignment = NSTextAlignment.center
-    static let titleLabelFont = UIFont.systemFont(ofSize: 20, weight: .bold)
-    static let subTitleLabelFont = UIFont.systemFont(ofSize: 15, weight: .light)
-    static let subTitleLabelTextAlignment = NSTextAlignment.center
-  }
-  
-  
-  // MARK: - LoggerView
-  struct LoggerView {
-    static let defaultBackgroundColor = UIColor.white
-    static let logTextViewFont = UIFont.systemFont(ofSize: 10, weight: .light)
-    static let logTextViewTextColor = UIColor.white
-    static let logTextViewBackground = UIColor.black
-  }
-  
-  
-  // MARK: - LogFooterView
-  struct LogFooterView {
-    static let defaultBackgroundColor = UIColor.groupGray
-    static let logButtonTitleFont = UIFont.systemFont(ofSize: 18, weight: .regular)
-  }
-  
-  
-  // MARK: - TimePickerView
-  struct TimePickerView {
-    static var itemNameLabelFont = UIFont.systemFont(ofSize: 18, weight: .regular)
-    static var pickerItemLabelFont = UIFont.systemFont(ofSize: 18, weight: .light)
-    static var pickerItemLabelTextAlignment = NSTextAlignment.center
-    static var pickerItemLabelLineBreakMode = NSLineBreakMode.byWordWrapping
-    static var pickerItemLabelNumberOfLines = 0
-  }
-
-  
-  // MARK: - BluetoothPeripheralViewController
-  struct BluetoothPeripheralVC {
-    static let navigationBarBackgroundColor = UIColor.groupGray
-    static let navigationBarTextColor = UIColor.appleBlue
     
-    static let peripheralNameLabelFont = UIFont.systemFont(ofSize: 25, weight: .regular)
-    static let peripheralNameLabelNumberOfLines = 1
-    static let peripheralNameLabelAlignment = NSTextAlignment.left
+    // MARK: - NavigationBar
+    struct NavigationBar {
+        static let titleFont = UIFont(name: "AvenirNext-DemiBold", size: 17) ?? UIFont.systemFont(ofSize: 17, weight: .bold)
+        static let tintColor = UIColor.white
+        static let backgroundColor = UIColor.mint
+    }
     
-    static let peripheralUUIDLabelFont = UIFont.systemFont(ofSize: 16, weight: .ultraLight)
-    static let peripheralUUIDLabelNumberOfLines = 1
-    static let peripheralUUIDLabelAlignment = NSTextAlignment.left
     
-    static let connectedLabelFont = UIFont.systemFont(ofSize: 18, weight: .bold)
-    static let connectedLabelTextColor = UIColor.red
-    static let connectedLabelNumberOfLines = 1
-    static let connectedLabelAlignment = NSTextAlignment.left
-  }
-  
-  
-  // MARK: - BluetoothCharacteristicViewController
-  struct BluetoothCharacteristicVC {
-    static let navigationBarBackgroundColor = UIColor.groupGray
-    static let navigationBarTextColor = UIColor.appleBlue
+    // MARK: - TabBar
+    struct TabBar {
+        static let backgroundColor = UIColor.charcoal
+        static let tintColor = UIColor.white
+    }
     
-    static let peripheralNameLabelFont = UIFont.systemFont(ofSize: 25, weight: .regular)
-    static let peripheralNameLabelNumberOfLines = 1
-    static let peripheralNameLabelAlignment = NSTextAlignment.left
     
-    static let peripheralUUIDLabelFont = UIFont.systemFont(ofSize: 16, weight: .ultraLight)
-    static let peripheralUUIDLabelNumberOfLines = 1
-    static let peripheralUUIDLabelAlignment = NSTextAlignment.left
+    // MARK: - RestaurantSearchBar
+    struct RestaurantSearchBar {
+        static var searchBarBackgroundColor = UIColor.mint
+        static let searchBarCancelButtonFont = UIFont.init(name: "AvenirNext-Regular", size: 14) ?? UIFont.systemFont(ofSize: 14, weight: .light)
+        static let searchBarCancelButtonColor = UIColor.white
+        static let searchBarCancelButtonBackgroundColor = UIColor.white
+        
+        static let searchTextFieldBackgroundColor = UIColor.white
+        static let searchTextFieldFont = UIFont.init(name: "AvenirNext-Regular", size: 14) ?? UIFont.systemFont(ofSize: 14, weight: .light)
+        static let searchTextFieldColor = UIColor.black
+        static let searchTextFieldPlaceholder = UIColor.gray
+        static var searchTextFieldTintColor = UIColor.darkMint
+        static let textFieldClearButtonColor = UIColor.gray
+        static let glassIconColor = UIColor.gray
+    }
     
-    static let connectedLabelFont = UIFont.systemFont(ofSize: 18, weight: .bold)
-    static let connectedLabelTextColor = UIColor.red
-    static let connectedLabelNumberOfLines = 1
-    static let connectedLabelAlignment = NSTextAlignment.left
-  }
-  
-  
-  // MARK: - BluetoothConnectivityTableViewHeader
-  struct BluetoothConnectivityTableViewHeader {
-    static let defaultBackgroundColor = UIColor.white
-    static let titleLabelFont = UIFont.systemFont(ofSize: 18, weight: .bold)
-    static let titleLabelTextColor = UIColor.black
-    static let titleLabelTextAlignment = NSTextAlignment.left
-    static let titleLabelNumberOfLines = 1
-  }
-  
-  
-  // MARK: - BluetoothScanningTableViewCell
-  struct BluetoothScanningCell {
-    static let defaultBackgroundColor = UIColor.white
     
-    static let peripheralNameLabelFont = UIFont.systemFont(ofSize: 18, weight: .regular)
-    static let peripheralNameLabelTextColor = UIColor.black
-    static let peripheralNameLabelAlignment = NSTextAlignment.left
-    static let peripheralNameLabelNumberOfLines = 1
+    // MARK: ListMapButton
+    struct ListMapButton {
+        static let titleFont = UIFont.init(name: "AvenirNext-DemiBold", size: 14) ?? UIFont.systemFont(ofSize: 14, weight: .bold)
+        static let titleColor = UIColor.white
+        static let backgroundColor = UIColor.mint
+    }
     
-    static let signalStrengthLabelFont = UIFont.systemFont(ofSize: 10, weight: .regular)
-    static let signalStrengthLabelAlignment = NSTextAlignment.center
-    static let signalStrengthLabelNumberOfLines = 1
+    // MARK: - AvailabilityMessageView
+    struct AvailabilityMessageView {
+        static let titleLabelTextAlignment = NSTextAlignment.center
+        static let titleLabelFont = UIFont(name: "AvenirNext-DemiBold", size: 20) ?? UIFont.systemFont(ofSize: 20, weight: .bold)
+        static let subTitleLabelFont = UIFont(name: "AvenirNext-Regular", size: 15) ?? UIFont.systemFont(ofSize: 15, weight: .light)
+        static let subTitleLabelTextAlignment = NSTextAlignment.center
+    }
     
-    static let serviceDescriptionLabelFont = UIFont.systemFont(ofSize: 12, weight: .ultraLight)
-    static let serviceDescriptionLabelAlignment = NSTextAlignment.left
-    static let serviceDescriptionLabelNumberOfLines = 1
     
-    static let connectButtonTitleFont = UIFont.systemFont(ofSize: 15, weight: .regular)
-  }
-  
-  
-  // MARK: - BluetoothPeripheralHeader
-  struct BluetoothPeripheralHeader {
-    static let defaultBackgroundColor = UIColor.white
     
-    static let titleLabelFont = UIFont.systemFont(ofSize: 19, weight: .medium)
-    static let titleLabelTextColor = UIColor.black
-    static let titleLabelAlignment = NSTextAlignment.left
-    static let titleLabelNumberOfLines = 1
-  }
-  
-  
-  // MARK: - BluetoothCharacteristicTableViewCell
-  struct BluetoothCharacteristicCell {
-    static let defaultBackgroundColor = UIColor.white
+    // MARK: - LunchViewController
+    struct LunchVC {
+        static let peripheralNameLabelFont = UIFont.systemFont(ofSize: 25, weight: .regular)
+        static let peripheralNameLabelNumberOfLines = 1
+        static let peripheralNameLabelAlignment = NSTextAlignment.left
+        
+        static let peripheralUUIDLabelFont = UIFont.systemFont(ofSize: 16, weight: .ultraLight)
+        static let peripheralUUIDLabelNumberOfLines = 1
+        static let peripheralUUIDLabelAlignment = NSTextAlignment.left
+        
+        static let connectedLabelFont = UIFont.systemFont(ofSize: 18, weight: .bold)
+        static let connectedLabelTextColor = UIColor.red
+        static let connectedLabelNumberOfLines = 1
+        static let connectedLabelAlignment = NSTextAlignment.left
+    }
     
-    static let nameLabelFont = UIFont.systemFont(ofSize: 17, weight: .regular)
-    static let nameLabelTextColor = UIColor.black
-    static let nameLabelAlignment = NSTextAlignment.left
-    static let nameLabelNumberOfLines = 1
     
-    static let propertiesDescriptionLabelFont = UIFont.systemFont(ofSize: 15, weight: .ultraLight)
-    static let propertiesDescriptionLabelTextColor = UIColor.black
-    static let propertiesDescriptionLabelAlignment = NSTextAlignment.left
-    static let propertiesDescriptionLabelNumberOfLines = 1
-  }
-  
-  
-  // MARK: - BluetoothCharacteristicActionTableViewCell
-  struct BluetoothCharacteristicActionCell {
-    static let defaultBackgroundColor = UIColor.white
-    static let actionButtonTitleFont = UIFont.systemFont(ofSize: 15, weight: .regular)
-  }
-  
-  
-  // MARK: - BluetoothPeripheralTableViewCell
-  struct BluetoothPeripheralAdvertisementCell {
-    static let defaultBackgroundColor = UIColor.white
+    // MARK: - RestaurantDetailsViewController
+    struct RestaurantDetailsVC {
+        static let defaultBackgroundColor = UIColor.white
+        static let nameAndCategoryViewBackgroundColor = UIColor.darkMint
+        
+        static let restaurantNameLabelFont = UIFont(name: "AvenirNext-DemiBold", size: 16) ?? UIFont.systemFont(ofSize: 16, weight: .bold)
+        static let restaurantNameLabelTextColor = UIColor.white
+        static let restaurantNameLabelAlignment = NSTextAlignment.left
+        static let restaurantNameLabelNumberOfLines = 1
+        
+        static let categoryTypeLabelFont = UIFont(name: "AvenirNext-Regular", size: 12) ?? UIFont.systemFont(ofSize: 12, weight: .regular)
+        static let categoryTypeLabelTextColor = UIColor.white
+        static let categoryTypeLabelAlignment = NSTextAlignment.left
+        static let categoryTypeLabelNumberOfLines = 1
+        
+        static let formattedAddressLabelFont = UIFont(name: "AvenirNext-Regular", size: 16) ?? UIFont.systemFont(ofSize: 16, weight: .regular)
+        static let formattedAddressLabelTextColor = UIColor.black
+        static let formattedAddressLabelAlignment = NSTextAlignment.left
+        static let formattedAddressLabelNumberOfLines = 0
+        
+        static let formattedPhoneLabelFont = UIFont(name: "AvenirNext-Regular", size: 16) ?? UIFont.systemFont(ofSize: 16, weight: .regular)
+        static let formattedPhoneLabelTextColor = UIColor.black
+        static let formattedPhoneLabelAlignment = NSTextAlignment.left
+        static let formattedPhoneLabelNumberOfLines = 1
+        
+        static let twitterHandlerLabelFont = UIFont(name: "AvenirNext-Regular", size: 16) ?? UIFont.systemFont(ofSize: 16, weight: .regular)
+        static let twitterHandlerLabelTextColor = UIColor.black
+        static let twitterHandlerLabelAlignment = NSTextAlignment.left
+        static let twitterHandlerLabelNumberOfLines = 1
+    }
     
-    static let nameLabelFont = UIFont.systemFont(ofSize: 17, weight: .regular)
-    static let nameLabelTextColor = UIColor.black
-    static let nameLabelAlignment = NSTextAlignment.left
-    static let nameLabelNumberOfLines = 1
     
-    static let descriptionLabelFont = UIFont.systemFont(ofSize: 15, weight: .ultraLight)
-    static let descriptionLabelTextColor = UIColor.black
-    static let descriptionLabelAlignment = NSTextAlignment.left
-    static let descriptionLabelNumberOfLines = 1
-  }
-
-  
-  
-  // MARK: - PopupCentralManagerStateView
-  struct PopupCentralManagerStateView {
-    static var backgroundColor: UIColor { return UIColor.appleBlue }
-    static let messageLabelFont = UIFont.systemFont(ofSize: 12, weight: .bold)
-    static let messageLabelTextColor = UIColor.white
-    static let messageLabelTextAlignment = NSTextAlignment.center
-    static let messageLabelNumberOfLines = 2
-  }
+    // MARK: - RestaurantCollectionViewCell
+    struct RestaurantCell {
+        static let defaultBackgroundColor = UIColor.white
+        
+        static let restaurantNameLabelFont = UIFont(name: "AvenirNext-DemiBold", size: 16) ?? UIFont.systemFont(ofSize: 16, weight: .bold)
+        static let restaurantNameLabelTextColor = UIColor.white
+        static let restaurantNameLabelAlignment = NSTextAlignment.left
+        static let restaurantNameLabelNumberOfLines = 1
+        
+        static let categoryTypeLabelFont = UIFont(name: "AvenirNext-Regular", size: 12) ?? UIFont.systemFont(ofSize: 12, weight: .regular)
+        static let categoryTypeLabelTextColor = UIColor.white
+        static let categoryTypeLabelAlignment = NSTextAlignment.left
+        static let categoryTypeLabelNumberOfLines = 1
+    }
+    
+    // MARK: RestaurantMapTableViewCell
+    struct RestaurantMapCell {
+        static let defaultBackgroundColor = UIColor.white
+        
+        static let nameLabelFont = UIFont(name: "AvenirNext-DemiBold", size: 16) ?? UIFont.systemFont(ofSize: 16, weight: .bold)
+        static let nameLabelTextColor = UIColor.black
+        static let nameLabelAlignment = NSTextAlignment.left
+        static let nameLabelNumberOfLines = 1
+        
+        static let addressLabelFont = UIFont(name: "AvenirNext-Regular", size: 12) ?? UIFont.systemFont(ofSize: 12, weight: .regular)
+        static let addressLabelTextColor = UIColor.black
+        static let addressLabelAlignment = NSTextAlignment.left
+        static let addressLabelNumberOfLines = 1
+    }
+    
+    // MARK: RestaurantDetailMapView
+    struct RestaurantDetailMapView {
+        static let defaultBackgroundColor = UIColor.white
+        
+        static let nameLabelFont = UIFont(name: "AvenirNext-DemiBold", size: 14) ?? UIFont.systemFont(ofSize: 14, weight: .bold)
+        static let nameLabelTextColor = UIColor.darkMint
+        static let nameLabelAlignment = NSTextAlignment.left
+        static let nameLabelNumberOfLines = 1
+        
+        static let streetLabelFont = UIFont(name: "AvenirNext-Regular", size: 12) ?? UIFont.systemFont(ofSize: 12, weight: .regular)
+        static let streetLabelTextColor = UIColor.black
+        static let streetLabelAlignment = NSTextAlignment.left
+        static let streetLabelNumberOfLines = 1
+        
+    }
+    
 }

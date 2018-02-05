@@ -9,5 +9,6 @@
 import Foundation
 
 enum SegueIdentifierType: String {
-  case digitalPictureFramePageSegue = "DigitalPictureFramePageSegue"
+    case segueRestaurantDetails = "SegueRestaurantDetailsIdentifier"
+    case segueRestaurantMap = "SegueRestaurantMapIdentifier"
 }

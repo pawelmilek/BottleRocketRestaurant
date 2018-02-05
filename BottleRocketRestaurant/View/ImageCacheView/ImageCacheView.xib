@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageCacheView" customModule="BottleRocketRestaurant" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="07Z-Mj-hIo"/>
+                <outlet property="imageView" destination="ELZ-QP-rK7" id="2Du-q1-Iur"/>
+                <outlet property="placeholderImageView" destination="upK-QK-l0H" id="Si5-Oe-2fS"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ELZ-QP-rK7">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="upK-QK-l0H" userLabel="Placeholder Image View">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ELZ-QP-rK7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="08M-da-qdo"/>
+                <constraint firstItem="upK-QK-l0H" firstAttribute="centerY" secondItem="ELZ-QP-rK7" secondAttribute="centerY" id="CZh-8d-tYD"/>
+                <constraint firstAttribute="bottom" secondItem="ELZ-QP-rK7" secondAttribute="bottom" id="JB4-4l-fvW"/>
+                <constraint firstItem="upK-QK-l0H" firstAttribute="width" secondItem="ELZ-QP-rK7" secondAttribute="width" id="PKT-vs-3wI"/>
+                <constraint firstItem="ELZ-QP-rK7" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="RrT-cB-L0G"/>
+                <constraint firstItem="upK-QK-l0H" firstAttribute="centerX" secondItem="ELZ-QP-rK7" secondAttribute="centerX" id="ZS6-qy-y3w"/>
+                <constraint firstItem="upK-QK-l0H" firstAttribute="height" secondItem="ELZ-QP-rK7" secondAttribute="height" id="m9r-6G-8Gx"/>
+                <constraint firstAttribute="trailing" secondItem="ELZ-QP-rK7" secondAttribute="trailing" id="tCK-xL-RfT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-25" y="-214"/>
+        </view>
+    </objects>
+</document>
