@@ -9,7 +9,7 @@
 import UIKit
 
 protocol LunchDataSourceDelegate: class, UICollectionViewDataSource, UICollectionViewDelegate {
-    weak var delegatorVC: UIViewController? { get }
+    var delegatorVC: UIViewController? { get }
     var items: [Restaurant]? { get set }
     
     init(items: [Restaurant]?, delegatorVC: UIViewController?)

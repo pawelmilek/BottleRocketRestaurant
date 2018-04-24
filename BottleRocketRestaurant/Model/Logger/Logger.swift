@@ -12,7 +12,7 @@ struct Logger {
   static private var data: [String] = []
   
   static var stringRepresentation: String {
-    return data.flatMap({$0}).joined(separator: "\n")
+    return data.compactMap({$0}).joined(separator: "\n")
   }
 }
 

@@ -41,7 +41,7 @@ extension WebService {
                 return
             }
             
-            do {
+          do {   // TODO: extract
                 let restaurants = try JSONDecoder().decode(RestaurantResponse.self, from: responseData)
                 completionHandler(.success(restaurants))
                 
@@ -51,5 +51,6 @@ extension WebService {
             }
         }).resume()
     }
-    
+
 }
+
